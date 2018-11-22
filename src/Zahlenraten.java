@@ -44,5 +44,11 @@ public class Zahlenraten {
 
             JOptionPane.showMessageDialog(null,"Falsch geraten ;)");
         }
+
+        // Ausgabe falls Ganzzahl (Eingabe) nahe an der Zufallszahl liegt
+        if (ganzzahl-zufallszahl <2 ){
+
+            JOptionPane.showMessageDialog(null,"Nah dran!");
+        }
     }
 }
