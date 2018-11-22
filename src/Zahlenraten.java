@@ -32,14 +32,16 @@ public class Zahlenraten {
 
         for (int i=0;i<3; ++i){
 
-            int ganzzahl = Integer.parseInt(JOptionPane.showInputDialog("Ganzzahl zwischen 1 und 10 eingeben"));
+            String ganzzahl = JOptionPane.showInputDialog("Ganzzahl zwischen 1 und 10 eingeben");
+            //Umwandlung von String zu Int
+            int number = Integer.parseInt(ganzzahl);
 
 
         /*Versuch, Zufallszahl und Ganzzahl auf Übereinstimmung zu Prüfen.
           Geht nicht, da das eine ein String ist und das andere int.
           Ergänzen des Codes um fehlende Operationen*/
 
-            if (zufallszahl == ganzzahl) {
+            if (zufallszahl == number) {
 
                 JOptionPane.showMessageDialog(null, "Sie haben die Zahl erraten!");
                 break;
@@ -50,7 +52,7 @@ public class Zahlenraten {
 
 
             // Ausgabe falls Ganzzahl (Eingabe) nahe an der Zufallszahl liegt
-            if (ganzzahl - zufallszahl < 2) {
+            if (number - zufallszahl < 2) {
 
                 JOptionPane.showMessageDialog(null, "Nah dran!");
             }
