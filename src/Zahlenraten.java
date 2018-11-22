@@ -29,5 +29,20 @@ public class Zahlenraten {
 
             JOptionPane.showMessageDialog(null,"Zahl ist ungerade");
         }
+
+        int ganzzahl = Integer.parseInt(JOptionPane.showInputDialog("Ganzzahl zwischen 1 und 10 eingeben"));
+
+        /*Versuch, Zufallszahl und Ganzzahl auf Übereinstimmung zu Prüfen.
+          Geht nicht, da das eine ein String ist und das andere int.
+          Ergänzen des Codes um fehlende Operationen*/
+
+        if (zufallszahl == ganzzahl){
+
+            JOptionPane.showMessageDialog(null,"Sie haben die Zahl erraten!");
+        }
+        else {
+
+            JOptionPane.showMessageDialog(null,"Falsch geraten ;)");
+        }
     }
 }
